@@ -97,5 +97,19 @@ nrow(maraton)#numero de filas
 install.packages("dplyr")
 library("dplyr")#utilizar paquete
 glimpse(maraton)#str same
-summary(maraton)
+summary(maraton)#info de columnas
+#observación = equivalente al registro
+#variable = equivalente a una columna
+
+#preparación de los datos
+#paso 1, observar registros
+View(maraton)
+maraton
+head(maraton, 3)#solo muestra los primeros
+tail(maraton)#solo los ultimos registros
+#leer archivos que nos son archivos de texto complejos?
+install.packages("RWeka")
+library("RWeka")
+datos <- read.arff("CEE_DATA.arff")
+datos
 
